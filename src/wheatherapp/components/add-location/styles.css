@@ -1,0 +1,26 @@
+.add-location {}
+
+.add-location input {
+    height: 2rem;
+    width: 15rem;
+    border: .01rem solid #000;
+    border-radius: .3rem;
+    margin-right: 1rem;
+    outline: none;
+    padding: 0.5rem 1rem;
+}
+
+.add-location button {
+    height: 2rem;
+    width: 6rem;
+    border: .01rem solid #000;
+    border-radius: .3rem;
+    background: #000000AA;
+    color: #fff;
+    font-size: .9rem;
+}
+
+.add-location button:not(:disabled):hover {
+    cursor: pointer;
+    background: #000;
+}
