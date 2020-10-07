@@ -5,7 +5,7 @@ import {
 
 export default {
     fetchWeatherData: (searchTerm, searchType = "q") => {
-        return fetch(`http://api.openweathermap.org/data/2.5/weather?${searchType}=${searchTerm}&appid=${config.API_KEY}&lang=${config.LANG}&units=${config.UNITS}`).then(res => res.json())
+        return fetch(`//api.openweathermap.org/data/2.5/weather?${searchType}=${searchTerm}&appid=${config.API_KEY}&lang=${config.LANG}&units=${config.UNITS}`).then(res => res.json())
     },
 
     fetchPhotos: (searchTerm) => {
