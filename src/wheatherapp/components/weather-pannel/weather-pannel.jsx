@@ -1,6 +1,6 @@
 import React from "react";
 
-function WeatherPannel({ name, weather, wind, main }) {
+function WeatherPannel({ name, weather, wind, main, onRemove, onClick, selected}) {
   if (!weather) {
     return null;
   }
@@ -8,7 +8,8 @@ function WeatherPannel({ name, weather, wind, main }) {
   const currentWheater = weather[0];
 
   return (
-    <div className="weather-pannel">
+    <div className={`weather-pannel ${selected ? "seledted" : ""}`}onClick={() => onClick()}>
+      <span className="remove-icon" onClick={() => onRemove()}>X</span>
       <h1 className="city-name">
         <span>{name}</span>
         <img

@@ -12,11 +12,18 @@ function AddLocation(props) {
     setValue("");
   };
 
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      handleAdd()
+    }
+  }
+
   return (
     <div className="add-location">
       <input
         type="text"
         onChange={(e) => setValue(e.target.value)}
+        onKeyDown={handleKeyDown} 
         value={value}
         placeholder="Busca un lugar o un CP"
       />
