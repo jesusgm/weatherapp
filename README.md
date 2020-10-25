@@ -1,6 +1,6 @@
 # WeatherApp
 
-Esta app está creada a partir de create-react-app
+Esta app está creada a partir de create-react-app y se puede ver el resultado [aqui](https://jesusgm.github.io/weatherapp/)
 
 ## APIs que utiliza
 
